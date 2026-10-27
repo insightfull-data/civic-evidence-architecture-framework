@@ -11,6 +11,7 @@ This crosswalk shows conceptual alignment and identifies where a team should con
 | Reference framework | Primary contribution | Alignment in this framework | Important boundary |
 | --- | --- | --- | --- |
 | [TOGAF Standard, 10th Edition](https://www.opengroup.org/togaf) | Enterprise architecture method, architecture domains, governance, stakeholder concerns, and lifecycle | Architecture principles, product surfaces, responsibility layers, decision records, staged change, and fitness tests | This repository is not a complete TOGAF Architecture Development Method implementation |
+| [IBM Autonomic Computing Reference Architecture and MAPE-K](https://www.redbooks.ibm.com/redbooks/pdfs/sg246665.pdf) | Runtime feedback loop organized as Monitor, Analyze, Plan, and Execute using shared Knowledge | Bounded-agent observation, evidence validation, policy-constrained planning, allowlisted execution, governed state, audit history, and stop controls | MAPE-K structures runtime operation; it does not by itself provide AI risk governance, authorize autonomous action, or replace human and publication controls |
 | [DAMA-DMBOK](https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/) | Data governance, architecture, quality, metadata, security, integration, and lifecycle disciplines | Evidence contracts, semantic definitions, ownership, provenance, quality dimensions, retention, and data-product cards | This repository does not reproduce DAMA's copyrighted body of knowledge or cover every knowledge area |
 | [NIST AI Risk Management Framework](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) | Govern, Map, Measure, and Manage functions for AI risk | AI use-case registration, context and impact mapping, evaluation, monitoring, risk response, and retirement | The NIST AI RMF is broader and should be consulted directly; NIST is updating the framework |
 | [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html) | Requirements for establishing, implementing, maintaining, and continually improving an AI management system | AI ownership, policy, lifecycle controls, monitoring, corrective action, and continual review | This repository is guidance, not an AI management system or certification package |
@@ -32,7 +33,7 @@ Use DAMA-DMBOK for the wider data-management program. Use the evidence contract,
 
 ### For AI and agent governance
 
-Use the NIST AI RMF to structure Govern, Map, Measure, and Manage activities. Use ISO/IEC 42001 when establishing a formal organizational AI management system. Use the OECD principles to test values and public accountability. Use the Canada AIA as an example of proportional impact assessment, where appropriate. Use vendor responsible-AI material as supplementary operational guidance, not as the only governance basis.
+Use the NIST AI RMF to structure Govern, Map, Measure, and Manage activities. Use ISO/IEC 42001 when establishing a formal organizational AI management system. Use the OECD principles to test values and public accountability. Use the Canada AIA as an example of proportional impact assessment, where appropriate. Use MAPE-K to organize the bounded runtime feedback loop after purpose, permissions, and controls are established. Use vendor responsible-AI material as supplementary operational guidance, not as the only governance basis.
 
 ### For cybersecurity
 

@@ -17,6 +17,7 @@ This repository provides a reusable way to prevent that drift.
 - [Architecture framework](framework/architecture-framework.md)
 - [Evidence classification](framework/evidence-classification.md)
 - [AI and agent governance](framework/ai-agent-governance.md)
+- [MAPE-K bounded operational loop](framework/mape-k-operational-loop.md)
 - [Standards and reference framework crosswalk](framework/standards-crosswalk.md)
 - [Publication gates](framework/publication-gates.md)
 - [Usage-aware efficiency](framework/usage-aware-efficiency.md)
@@ -44,9 +45,9 @@ This repository provides a reusable way to prevent that drift.
 
 The framework now includes a dedicated, risk-proportionate approach for deterministic automation, machine-learning models, generative features, bounded agents, and automated decision systems.
 
-The governance lifecycle covers use-case registration, capability and impact classification, approved data and tools, autonomy boundaries, evaluation, human oversight, public disclosure, monitoring, incident handling, pausing, and retirement. Controls become stronger as autonomy, data sensitivity, or potential impact increases.
+The governance lifecycle covers use-case registration, capability and impact classification, approved data and tools, autonomy boundaries, evaluation, human oversight, public disclosure, monitoring, incident handling, pausing, and retirement. Controls become stronger as autonomy, data sensitivity, or potential impact increases. For bounded runtime operation, the framework adapts IBM's MAPE-K pattern: Monitor, Analyze, Plan, and Execute using shared Knowledge.
 
-See [AI and Agent Governance](framework/ai-agent-governance.md) and the reusable [governance assessment](templates/ai-agent-governance-assessment.md).
+See [AI and Agent Governance](framework/ai-agent-governance.md), the [MAPE-K Bounded Operational Loop](framework/mape-k-operational-loop.md), and the reusable [governance assessment](templates/ai-agent-governance-assessment.md).
 
 ## Relationship to recognized frameworks
 
@@ -61,6 +62,7 @@ The framework is informed by established architecture, data-management, security
 - [OECD AI Principles](https://oecd.ai/en/ai-principles)
 - [Government of Canada Algorithmic Impact Assessment](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/automated-decision-making/algorithmic-impact-assessment.html)
 - [Microsoft Responsible AI](https://www.microsoft.com/en/ai/responsible-ai)
+- [IBM Autonomic Computing Reference Architecture and MAPE-K](https://www.redbooks.ibm.com/redbooks/pdfs/sg246665.pdf)
 
 The [standards crosswalk](framework/standards-crosswalk.md) explains conceptual alignment and boundaries. The repository does not claim certification, conformity, endorsement, or complete implementation of any referenced framework.
 

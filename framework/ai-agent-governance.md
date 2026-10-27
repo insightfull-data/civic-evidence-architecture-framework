@@ -168,6 +168,18 @@ At minimum, define:
 - **Human escalation:** conditions requiring review
 - **Audit record:** inputs, actions, evidence, outputs, errors, and policy version
 
+### MAPE-K as the runtime control loop
+
+For agents that observe changing conditions and select permitted actions, this framework adapts IBM's MAPE-K autonomic-computing pattern:
+
+- **Monitor:** collect approved observations, source-health signals, state, and policy-relevant events.
+- **Analyze:** validate and interpret those observations, detect conditions, and estimate uncertainty without treating missing data as fact.
+- **Plan:** select an allowed next action under the current policy, budget, risk tier, and stop conditions.
+- **Execute:** carry out only the approved action through allowlisted tools, then record the result.
+- **Knowledge:** maintain the governed state shared across the loop, including source definitions, evidence, policies, limits, versions, decisions, and audit history.
+
+MAPE-K is an operational reference model, not permission for unrestricted autonomy. Human approval gates, prohibited actions, publication controls, and immediate pause or rollback mechanisms remain outside and around the loop. See the [MAPE-K Bounded Operational Loop](mape-k-operational-loop.md) for the detailed mapping and source documentation.
+
 ## 6. Human oversight
 
 Human involvement must be meaningful, not ceremonial.
@@ -227,6 +239,6 @@ Do not present a simulated person as a real resident or a model output as an obs
 
 ## 10. Framework alignment
 
-This governance approach is informed by the lifecycle and risk-management concepts in the NIST AI RMF, ISO/IEC 42001, OECD AI Principles, Government of Canada Algorithmic Impact Assessment, and Microsoft Responsible AI Standard. See the [Standards and Reference Framework Crosswalk](standards-crosswalk.md).
+This governance approach is informed by the lifecycle and risk-management concepts in the NIST AI RMF, ISO/IEC 42001, OECD AI Principles, Government of Canada Algorithmic Impact Assessment, and Microsoft Responsible AI Standard. Bounded runtime operation also draws on IBM's MAPE-K autonomic-computing reference model. See the [Standards and Reference Framework Crosswalk](standards-crosswalk.md).
 
 Alignment does not mean certification, conformity, endorsement, or complete implementation of any referenced framework.

@@ -75,6 +75,29 @@ flowchart LR
     G[Guardrails:<br/>approved sources<br/>permitted actions<br/>stop conditions<br/>compute limits<br/>retention] --- D
 ```
 
+## MAPE-K bounded operational loop
+
+```mermaid
+flowchart LR
+    S[Approved sensors<br/>and data sources] --> M[Monitor]
+    M --> A[Analyze]
+    A --> P[Plan]
+    P --> E[Execute]
+    E --> T[Allowlisted tools<br/>and managed process]
+    T -. resulting state .-> S
+
+    K[(Governed Knowledge:<br/>evidence and state<br/>policies and limits<br/>versions and audit history)]
+    K --- M
+    K --- A
+    K --- P
+    K --- E
+
+    H[Human oversight<br/>approval, pause, rollback] -. constrains .-> P
+    H -. constrains .-> E
+```
+
+This adapts IBM's Monitor-Analyze-Plan-Execute over shared Knowledge model for bounded agent operation. See the [MAPE-K framework page](../framework/mape-k-operational-loop.md) and [IBM's autonomic-computing documentation](https://www.redbooks.ibm.com/redbooks/pdfs/sg246665.pdf).
+
 ## AI governance lifecycle
 
 ```mermaid

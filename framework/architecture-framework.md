@@ -87,6 +87,8 @@ Do not silently convert missing data into zero. Distinguish source failure, stal
 
 Models and agents should have approved sources, permitted actions, prohibited actions, compute limits, retention rules, stop conditions, and an audit history.
 
+Where an agent responds to changing conditions, use the [MAPE-K Bounded Operational Loop](mape-k-operational-loop.md) to separate monitoring, analysis, planning, and execution around shared governed knowledge. MAPE-K organizes runtime behavior; it does not replace impact assessment, human oversight, or publication review.
+
 ## 5. Logical layers
 
 ### Source layer
@@ -189,7 +191,7 @@ Every model or agent should have:
 - Public-claim boundary
 - Audit record
 
-AI, machine-learning, generative, and agent capabilities require controls proportional to their autonomy, data sensitivity, and potential impact. See [AI and Agent Governance](ai-agent-governance.md) for the risk tiers, lifecycle, bounded-agent controls, human oversight, evaluation, incident handling, and disclosure requirements.
+AI, machine-learning, generative, and agent capabilities require controls proportional to their autonomy, data sensitivity, and potential impact. See [AI and Agent Governance](ai-agent-governance.md) for the risk tiers, lifecycle, bounded-agent controls, human oversight, evaluation, incident handling, and disclosure requirements. The [MAPE-K Bounded Operational Loop](mape-k-operational-loop.md) provides a complementary runtime structure for approved agent behavior.
 
 The framework's relationship to established architecture, data, security, and AI references is documented in the [Standards and Reference Framework Crosswalk](standards-crosswalk.md).
 
