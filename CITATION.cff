@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as follows."
+title: "Civic Evidence Architecture Framework"
+type: software
+authors:
+  - family-names: "Williams"
+    given-names: "Donald"
+year: 2026
+version: "1.0.0"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/insightfull-data/civic-evidence-architecture-framework"
+url: "https://github.com/insightfull-data/civic-evidence-architecture-framework"
+abstract: "A practical architecture framework for translating public and approved data into transparent, governed, privacy-aware civic evidence."
+keywords:
+  - civic technology
+  - data architecture
+  - public data
+  - data governance
+  - responsible AI
+  - civic evidence
