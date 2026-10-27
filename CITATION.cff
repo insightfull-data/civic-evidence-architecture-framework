@@ -6,7 +6,7 @@ authors:
   - family-names: "Williams"
     given-names: "Donald"
 year: 2026
-version: "1.0.0"
+version: "1.1.0"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/insightfull-data/civic-evidence-architecture-framework"
 url: "https://github.com/insightfull-data/civic-evidence-architecture-framework"

@@ -189,6 +189,10 @@ Every model or agent should have:
 - Public-claim boundary
 - Audit record
 
+AI, machine-learning, generative, and agent capabilities require controls proportional to their autonomy, data sensitivity, and potential impact. See [AI and Agent Governance](ai-agent-governance.md) for the risk tiers, lifecycle, bounded-agent controls, human oversight, evaluation, incident handling, and disclosure requirements.
+
+The framework's relationship to established architecture, data, security, and AI references is documented in the [Standards and Reference Framework Crosswalk](standards-crosswalk.md).
+
 ## 12. Delivery and change control
 
 Use a staged release process:

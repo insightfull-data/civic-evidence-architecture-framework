@@ -75,6 +75,23 @@ flowchart LR
     G[Guardrails:<br/>approved sources<br/>permitted actions<br/>stop conditions<br/>compute limits<br/>retention] --- D
 ```
 
+## AI governance lifecycle
+
+```mermaid
+flowchart LR
+    A[Register] --> B[Classify capability and impact]
+    B --> C[Map data, tools, people, and harms]
+    C --> D[Define controls]
+    D --> E[Test and evaluate]
+    E --> F{Release decision}
+    F -->|Private| G[Controlled experiment]
+    F -->|Public| H[Publish with disclosure]
+    F -->|Revise| C
+    G --> I[Monitor]
+    H --> I
+    I --> J[Continue, pause, or retire]
+```
+
 ## Publication maturity
 
 ```mermaid

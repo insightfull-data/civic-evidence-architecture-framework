@@ -16,12 +16,15 @@ This repository provides a reusable way to prevent that drift.
 
 - [Architecture framework](framework/architecture-framework.md)
 - [Evidence classification](framework/evidence-classification.md)
+- [AI and agent governance](framework/ai-agent-governance.md)
+- [Standards and reference framework crosswalk](framework/standards-crosswalk.md)
 - [Publication gates](framework/publication-gates.md)
 - [Usage-aware efficiency](framework/usage-aware-efficiency.md)
 - [Architecture diagrams](diagrams/README.md)
 - [Evidence contract template](templates/evidence-contract.md)
 - [Architecture decision record template](templates/architecture-decision-record.md)
 - [Model card template](templates/model-card.md)
+- [AI and agent governance assessment](templates/ai-agent-governance-assessment.md)
 - [Data product card template](templates/data-product-card.md)
 - [Fictional transit example](examples/fictional-transit-example.md)
 - [Originating case study](case-studies/README.md)
@@ -36,6 +39,30 @@ This repository provides a reusable way to prevent that drift.
 6. Make compute and retention proportional to public value.
 7. Keep every published claim traceable to its source, method, date, and limitations.
 8. Retire capabilities when their value no longer justifies their burden.
+
+## AI and agent governance
+
+The framework now includes a dedicated, risk-proportionate approach for deterministic automation, machine-learning models, generative features, bounded agents, and automated decision systems.
+
+The governance lifecycle covers use-case registration, capability and impact classification, approved data and tools, autonomy boundaries, evaluation, human oversight, public disclosure, monitoring, incident handling, pausing, and retirement. Controls become stronger as autonomy, data sensitivity, or potential impact increases.
+
+See [AI and Agent Governance](framework/ai-agent-governance.md) and the reusable [governance assessment](templates/ai-agent-governance-assessment.md).
+
+## Relationship to recognized frameworks
+
+The framework is informed by established architecture, data-management, security, and responsible-AI references, including:
+
+- [TOGAF Standard, 10th Edition](https://www.opengroup.org/togaf)
+- [DAMA-DMBOK](https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/)
+- [NIST AI Risk Management Framework](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/)
+- [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html)
+- [ISO/IEC 27001:2022](https://www.iso.org/standard/27001)
+- [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework)
+- [OECD AI Principles](https://oecd.ai/en/ai-principles)
+- [Government of Canada Algorithmic Impact Assessment](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/automated-decision-making/algorithmic-impact-assessment.html)
+- [Microsoft Responsible AI](https://www.microsoft.com/en/ai/responsible-ai)
+
+The [standards crosswalk](framework/standards-crosswalk.md) explains conceptual alignment and boundaries. The repository does not claim certification, conformity, endorsement, or complete implementation of any referenced framework.
 
 ## Intended users
 
@@ -57,9 +84,10 @@ This repository is not a deployable application, production topology, compliance
 2. Complete the [evidence contract](templates/evidence-contract.md).
 3. Classify every input using the [evidence classification](framework/evidence-classification.md).
 4. Choose the lightest suitable processing and storage pattern.
-5. Document the decision using the [ADR template](templates/architecture-decision-record.md).
-6. Use the [publication gates](framework/publication-gates.md) before releasing the result.
-7. Revisit the capability when cost, source quality, interpretation, or public value changes.
+5. If AI, a model, or an agent is involved, complete the [AI governance assessment](templates/ai-agent-governance-assessment.md).
+6. Document the decision using the [ADR template](templates/architecture-decision-record.md).
+7. Use the [publication gates](framework/publication-gates.md) before releasing the result.
+8. Revisit the capability when cost, source quality, interpretation, or public value changes.
 
 ## Origin
 
