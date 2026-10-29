@@ -30,6 +30,7 @@ This repository provides a reusable way to prevent that drift.
 - [Data product card template](templates/data-product-card.md)
 - [Workload cost card template](templates/workload-cost-card.md)
 - [Fictional transit example](examples/fictional-transit-example.md)
+- [Fictional cost-governance example](examples/fictional-cost-governance-example.md)
 - [Originating case study](case-studies/README.md)
 
 ## Core principles

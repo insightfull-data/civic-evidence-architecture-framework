@@ -98,6 +98,29 @@ flowchart LR
 
 This adapts IBM's Monitor-Analyze-Plan-Execute over shared Knowledge model for bounded agent operation. See the [MAPE-K framework page](../framework/mape-k-operational-loop.md) and [IBM's autonomic-computing documentation](https://www.redbooks.ibm.com/redbooks/pdfs/sg246665.pdf).
 
+## Cost and capacity feedback loop
+
+```mermaid
+flowchart LR
+    W[Workload and civic purpose] --> M[Monitor usage, cost, quality, and freshness]
+    M --> A[Analyze baseline, unit measures, and guardrails]
+    A --> P[Plan bounded response]
+    P --> E[Execute approved change]
+    E --> O[Observe outcome]
+    O -. next review .-> M
+
+    K[(Knowledge:<br/>workload card<br/>cost evidence<br/>assumptions<br/>decisions)]
+    K --- M
+    K --- A
+    K --- P
+    K --- E
+
+    H[Owner review<br/>continue, optimize,<br/>pause, or retire] -. constrains .-> P
+    H -. approves .-> E
+```
+
+See [Cost and Capacity Governance](../framework/cost-and-capacity-governance.md) and the [fictional cost-governance example](../examples/fictional-cost-governance-example.md).
+
 ## AI governance lifecycle
 
 ```mermaid
