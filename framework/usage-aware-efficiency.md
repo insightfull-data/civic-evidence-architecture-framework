@@ -51,3 +51,5 @@ Before making a workload permanent, ask:
 9. Is the value proportionate to compute, storage, and maintenance?
 
 Reduce, redesign, pause, or retire work when the answer is no.
+
+Use the [Cost and Capacity Governance](cost-and-capacity-governance.md) chapter and [workload cost card](../templates/workload-cost-card.md) to turn these principles into a repeatable operating decision.

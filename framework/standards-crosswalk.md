@@ -4,7 +4,7 @@ The Civic Evidence Architecture Framework is an implementation-oriented synthesi
 
 This crosswalk shows conceptual alignment and identifies where a team should consult the authoritative source. It does **not** claim certification, conformity, legal compliance, endorsement, or complete coverage.
 
-**Last reviewed:** October 27, 2026
+**Last reviewed:** October 28, 2026
 
 ## Crosswalk
 
@@ -20,6 +20,7 @@ This crosswalk shows conceptual alignment and identifies where a team should con
 | [OECD AI Principles](https://oecd.ai/en/ai-principles) | Human rights and democratic values, transparency, robustness, safety, accountability, and inclusive benefit | Civic purpose, privacy, explanation, public limitations, robustness, accountability, and community-impact review | The principles are values-based and require contextual implementation |
 | [Government of Canada Algorithmic Impact Assessment](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/automated-decision-making/algorithmic-impact-assessment.html) | Proportional assessment of automated-decision impact and corresponding mitigation | Risk tiers, early assessment, multidisciplinary review, human involvement, monitoring, documentation, and recourse | The AIA is mandatory in its defined federal-government context; this repository uses it only as a public reference unless it legally applies |
 | [Microsoft Responsible AI Standard v2](https://www.microsoft.com/en/ai/responsible-ai) | Operational practices around fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability | Evaluation categories, disclosure, human oversight, safety boundaries, quality, and governance records | This repository does not reproduce Microsoft's internal requirements or imply Microsoft endorsement |
+| [FinOps Framework](https://www.finops.org/framework/) | Value-based technology decisions, usage accountability, planning, allocation, and usage optimization | Usage-aware efficiency, workload-level cost evidence, proportional guardrails, review triggers, and pause or retirement decisions | This repository applies selected concepts and does not claim a formal FinOps practice, certification, or complete implementation |
 
 ## How to use the crosswalk
 
@@ -38,6 +39,10 @@ Use the NIST AI RMF to structure Govern, Map, Measure, and Manage activities. Us
 ### For cybersecurity
 
 Use NIST CSF 2.0 or an applicable security-management framework to establish organization-wide outcomes. Use ISO/IEC 27001 where an information security management system and possible certification are required. The security guidance in this repository is intentionally limited to architecture-level responsibilities.
+
+### For cost and capacity governance
+
+Use the FinOps Framework as an authoritative reference for technology-value accountability and collaborative cost management. Use the cost and capacity governance chapter and workload cost card here as proportionate implementation aids for civic evidence workloads.
 
 ## Suggested evidence package
 

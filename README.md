@@ -21,12 +21,14 @@ This repository provides a reusable way to prevent that drift.
 - [Standards and reference framework crosswalk](framework/standards-crosswalk.md)
 - [Publication gates](framework/publication-gates.md)
 - [Usage-aware efficiency](framework/usage-aware-efficiency.md)
+- [Cost and capacity governance](framework/cost-and-capacity-governance.md)
 - [Architecture diagrams](diagrams/README.md)
 - [Evidence contract template](templates/evidence-contract.md)
 - [Architecture decision record template](templates/architecture-decision-record.md)
 - [Model card template](templates/model-card.md)
 - [AI and agent governance assessment](templates/ai-agent-governance-assessment.md)
 - [Data product card template](templates/data-product-card.md)
+- [Workload cost card template](templates/workload-cost-card.md)
 - [Fictional transit example](examples/fictional-transit-example.md)
 - [Originating case study](case-studies/README.md)
 
@@ -63,6 +65,7 @@ The framework is informed by established architecture, data-management, security
 - [Government of Canada Algorithmic Impact Assessment](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/automated-decision-making/algorithmic-impact-assessment.html)
 - [Microsoft Responsible AI](https://www.microsoft.com/en/ai/responsible-ai)
 - [IBM Autonomic Computing Reference Architecture and MAPE-K](https://www.redbooks.ibm.com/redbooks/pdfs/sg246665.pdf)
+- [FinOps Framework](https://www.finops.org/framework/)
 
 The [standards crosswalk](framework/standards-crosswalk.md) explains conceptual alignment and boundaries. The repository does not claim certification, conformity, endorsement, or complete implementation of any referenced framework.
 
@@ -90,6 +93,8 @@ This repository is not a deployable application, production topology, compliance
 6. Document the decision using the [ADR template](templates/architecture-decision-record.md).
 7. Use the [publication gates](framework/publication-gates.md) before releasing the result.
 8. Revisit the capability when cost, source quality, interpretation, or public value changes.
+
+For material recurring workloads, complete the [workload cost card](templates/workload-cost-card.md) and apply the [cost and capacity governance](framework/cost-and-capacity-governance.md) lifecycle.
 
 ## Origin
 
