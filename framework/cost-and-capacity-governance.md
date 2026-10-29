@@ -114,44 +114,36 @@ One person may hold several roles in a small project. The responsibilities shoul
 | Cost reviewer | Provider evidence, allocation method, trends, and forecast limitations |
 | Governance reviewer | Privacy, security, public boundaries, and decision record |
 
-## Illustrative review thresholds
+## When to review
 
 Thresholds are prompts for investigation, not universal limits. Teams should set them from their own scale, risk, and evidence needs. A review might begin when:
 
 - monthly cost or a workload unit changes materially from its recent baseline;
 - executions increase while successful outputs remain stable;
 - most scheduled runs produce no changed evidence;
+- memory or CPU is disproportionate to the output;
 - observability volume grows faster than successful workload activity;
+- the same source data is processed independently by several features;
 - retained records pass their documented analytical period;
-- persistent capacity remains idle for a sustained period; or
+- persistent capacity remains idle when scheduled or event-driven execution could meet the need;
+- requested freshness is greater than the civic question requires; or
 - source failures create repeated retries without a useful public update.
 
 Document the baseline, observation period, threshold rationale, and resulting decision. Do not publish sensitive production values merely to demonstrate that a review occurred.
 
-## MAPE-K cost feedback loop
+## Review and improve cycle
 
-Cost and capacity governance can use the framework's bounded MAPE-K pattern:
+Use a plain, repeatable review cycle for each material workload:
 
-1. **Monitor:** Collect provider-reported usage, workload activity, quality, reliability, and freshness evidence.
-2. **Analyze:** Compare the workload with its baseline, unit measures, guardrails, and civic purpose.
-3. **Plan:** Select a bounded response such as caching, reducing cadence, changing retention, rightsizing, or pausing.
-4. **Execute:** Apply an approved change with rollback and failure behaviour defined.
-5. **Knowledge:** Retain the workload card, assumptions, cost classifications, decisions, and observed outcome.
+1. **Observe:** Review usage, cost drivers, successful outputs, failures, freshness, quality, and public use.
+2. **Assess:** Identify unexpected growth, idle capacity, duplicate processing, excessive retention, or work that produces no new evidence.
+3. **Decide:** Continue, optimize, redesign, pause, or retire the workload.
+4. **Change:** Apply one bounded change with testing, approval, failure behaviour, and rollback defined.
+5. **Record:** Update the workload card with the reason, expected benefit, observed result, and next review point.
 
 Automation may alert, recommend, or apply pre-approved low-risk controls. It should not make unbounded financial, publication, or retirement decisions.
 
-## Review triggers
-
-A workload should be reviewed when:
-
-- cost rises without a corresponding increase in use or evidence value;
-- scheduled work repeatedly runs without producing a changed result;
-- memory or CPU is disproportionate to the output;
-- routine observability events become a major cost driver;
-- the same source data is processed independently by several features;
-- retained data exceeds its documented purpose;
-- a persistent process could use scheduled or event-driven execution; or
-- the requested freshness is greater than the public question requires.
+Teams that already use MAPE-K may map this cycle to Monitor, Analyze, Plan, Execute, and shared Knowledge. MAPE-K is optional; the required outcome is a documented and repeatable cost decision process.
 
 ## Public and private boundaries
 

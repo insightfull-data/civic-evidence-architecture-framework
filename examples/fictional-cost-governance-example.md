@@ -10,6 +10,26 @@ Can residents see whether scheduled access to frequent transit has changed since
 
 The team proposes collecting a published transit schedule, validating it, calculating grouped access measures, and preparing static public evidence.
 
+## At a glance
+
+```mermaid
+flowchart LR
+    Q[Civic question] --> W[Register workload]
+    W --> D[Choose processing pattern]
+    D --> G[Set measures and guardrails]
+    G --> R[Run and observe]
+    R --> V{Is cost proportionate<br/>to useful evidence?}
+    V -->|Yes| C[Continue]
+    V -->|Can improve| O[Optimize or redesign]
+    V -->|No current value| P[Pause or retire]
+    C --> K[Record decision and review date]
+    O --> K
+    P --> K
+    K -. next review .-> R
+```
+
+The team is governing one workload, not the provider bill as a whole. It follows the evidence from its civic purpose to an explicit continue, change, pause, or retirement decision.
+
 ## Registration
 
 | Workload field | Fictional entry |
@@ -60,31 +80,31 @@ The workload card records these non-sensitive controls:
 - the workload can be paused while the last valid dated evidence remains available; and
 - source failure is shown as unavailable or stale, never interpreted as zero access.
 
-## MAPE-K review
+## Review and improve
 
-### Monitor
+### 1. Observe
 
-The team observes successful runs, changed outputs, execution duration, retained data, observability volume, public use, and evidence-quality failures.
+The team reviews successful runs, changed outputs, execution duration, retained data, observability volume, public use, and evidence-quality failures.
 
-### Analyze
+### 2. Assess
 
-The review finds that many collection runs detect no source change. Public use is stable, but events are being recorded for routine intermediate steps that do not help diagnose failures.
+Many collection runs detect no source change. Public use is stable, but routine intermediate steps create events that do not help diagnose failures.
 
-### Plan
+### 3. Decide
 
-The team proposes three bounded changes:
+The team chooses to optimize the workload rather than increase its budget, move providers, or reduce evidence quality. It approves three bounded changes:
 
 1. Check source metadata before downloading and processing the full dataset.
 2. Reduce routine event detail while preserving errors, validation outcomes, and audit evidence.
 3. Shorten retention for reproducible intermediate files while keeping published evidence and decision records.
 
-### Execute
+### 4. Change
 
 The changes are tested privately, approved by the workload and data owners, and released with rollback instructions. No civic measure or public interpretation is changed.
 
-### Knowledge
+### 5. Record
 
-The workload card records the original baseline, evidence classifications, approved changes, limitations, review date, and observed result.
+The workload card records the original baseline, evidence classifications, approved changes, limitations, review date, and observed result. The next review will compare successful published updates, unit cost, quality, and freshness with the previous period.
 
 ## Decision
 

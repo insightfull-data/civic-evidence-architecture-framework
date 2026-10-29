@@ -102,21 +102,20 @@ This adapts IBM's Monitor-Analyze-Plan-Execute over shared Knowledge model for b
 
 ```mermaid
 flowchart LR
-    W[Workload and civic purpose] --> M[Monitor usage, cost, quality, and freshness]
-    M --> A[Analyze baseline, unit measures, and guardrails]
-    A --> P[Plan bounded response]
-    P --> E[Execute approved change]
-    E --> O[Observe outcome]
-    O -. next review .-> M
+    W[Workload and civic purpose] --> O[Observe usage, cost, quality, freshness, and use]
+    O --> A[Assess baseline, unit measures, and guardrails]
+    A --> D{Decide}
+    D -->|Continue| C[Keep current design]
+    D -->|Improve| I[Optimize or redesign]
+    D -->|No current value| P[Pause or retire]
+    C --> R[Record outcome and next review]
+    I --> R
+    P --> R
+    R -. next review .-> O
 
-    K[(Knowledge:<br/>workload card<br/>cost evidence<br/>assumptions<br/>decisions)]
-    K --- M
+    K[(Workload card:<br/>cost evidence<br/>assumptions<br/>decisions)] --- O
     K --- A
-    K --- P
-    K --- E
-
-    H[Owner review<br/>continue, optimize,<br/>pause, or retire] -. constrains .-> P
-    H -. approves .-> E
+    K --- R
 ```
 
 See [Cost and Capacity Governance](../framework/cost-and-capacity-governance.md) and the [fictional cost-governance example](../examples/fictional-cost-governance-example.md).
